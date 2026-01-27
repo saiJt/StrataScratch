@@ -4,7 +4,7 @@ Calculate the total number of unique shipments for each month. A unique shipment
 The final output should display the month in `YYYY-MM` format along with the corresponding shipment cout.
 
 ### Problem Link
-https://platform.stratascratch.com/coding/2056-number-of-shipments-per-month?code_type=2
+[StrataScratch ID 2056](https://platform.stratascratch.com/coding/2056-number-of-shipments-per-month?code_type=2)
 
 ### Analysis Approach
 - **Time Transformation**: Converted the `shipment_date` column to a datetime object using `pd.to_datetime()`
