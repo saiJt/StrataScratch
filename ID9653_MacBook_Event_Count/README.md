@@ -9,7 +9,7 @@ Count the number of user events performed by 'MacBook Pro' users and output the 
 - **Case-Insensitive Filtering**: Applied `.str.lower()` to the `device` column to normalize the data, ensuring all 'MacBook Pro' events are captured regardless of original casing.
 - **Data Selection**: Narrowed down the dataset to only essential variables (`event_name`, `device`) before grouping and focus on the target metric.
 - **Aggregation**: Groupd by the data by `event_name` and utilized `.size()` to calculate the frequency of each event type.
-- **Data Formatting**: Used `.reset_index(name='event_count') to convert the aggregated series into a structured DataFrame and assign a descriptive header to the count column.
+- **Data Formatting**: Used `.reset_index(name='event_count')` to convert the aggregated series into a structured DataFrame and assign a descriptive header to the count column.
 - **Sorting**: Ordered the final result by `event_count` in descending order from the most frequent user events.
 
 
