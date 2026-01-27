@@ -3,7 +3,7 @@ import pandas as pd
 
 # Start writing code
 
-final_table = playbook_events[playbook_events['device']=='macbook pro']
+final_table = playbook_events[playbook_events['device'].str.lower() =='macbook pro']
 final_table = (
                 final_table[['event_name','device']]
                   .groupby('event_name')
@@ -15,7 +15,7 @@ final_table = (
 
 # Method_Chaining
 final_table = (
-                (playbook_events[playbook_events['device']=='macbook pro'])[['event_name','device']]
+                (playbook_events[playbook_events['device'].str.lower() =='macbook pro'])[['event_name','device']]
                   .groupby('event_name')
                   .size()
                   .reset_index(name = 'event_count')
