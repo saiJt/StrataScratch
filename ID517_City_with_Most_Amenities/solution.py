@@ -1,7 +1,7 @@
 # Import your libraries
 import pandas as pd
 
-# Step 1: Calculate the number of amenities for each host.
+# Step 1: Calculate the number of amenities for each host
 df_amenities = airbnb_search_details
 df_amenities['amenity_count'] = df_amenities['amenities'].str
                                                          .split(',')
